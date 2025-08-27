@@ -1,11 +1,8 @@
-const loveBtn = document.getElementById("heart_btn");
+//heart btn click
+const loveBtn = document.getElementById("card_section");
 loveBtn.addEventListener("click", function (e) {
   if (e.target.className.includes("fa-heart")) {
     const totalHeart = document.getElementById("total_heart").innerText;
-    console.log(totalHeart);
-
-
-
     
 
     const totalHeartCount = Number(totalHeart) + 1;
@@ -14,15 +11,40 @@ loveBtn.addEventListener("click", function (e) {
   }
 });
 
-const copyBtn = document.getElementById("heart_btn");
+
+// copy btn click
+const copyBtn = document.getElementById("card_section");
 copyBtn.addEventListener("click", function(e){
-     if (e.target.className.includes("copy_btn") || e.target.className.includes("fa-copy")) {
+     if (e.target.className.includes("copy_btn") || e.target.className.includes("fa-copy") ) {
+
+      //copy paste task
+      const card = e.target.closest(".card_container");
+      const callingNumber = card.querySelector(".call_number").innerText;
+      navigator.clipboard.writeText(callingNumber);
+      alert(`Calling Number ${callingNumber} is copied`)
+
+      
+    //copy count increase  
+    const totalCopyCount = document.getElementById("total_copy_count").innerText; //fixed count copy
+    const updatedCopyCount = Number(totalCopyCount) + 1;
+     document.getElementById("total_copy_count").innerText = updatedCopyCount
+    console.log(updatedCopyCount);
+  }
+})
+
+
+
+
+
+
+//call button
+const callBtn = document.getElementById("heart_btn");
+callBtn.addEventListener("click", function(e){
+     if (e.target.className.includes("call_btn") || e.target.className.includes("fa-phone")) {
+        alert("call for:  ")
     const totalCopyCount = document.getElementById("total_copy_count").innerText;
-    console.log(e.target.parentNode);
-
-
-
     
+
 
     const updatedCopyCount = Number(totalCopyCount) + 1;
      document.getElementById("total_copy_count").innerText = updatedCopyCount
