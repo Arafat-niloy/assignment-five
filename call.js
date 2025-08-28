@@ -45,7 +45,7 @@ callBtn.addEventListener("click", function (e) {
 
     // coin <20
     if (availableCoins < 20) {
-      alert("You need atleast 20 coins to call");
+      alert(" ❌ You need atleast 20 coins to call");
 
       return;
     }
@@ -57,7 +57,7 @@ callBtn.addEventListener("click", function (e) {
     const callingText = callingCard.querySelector("h3").innerText;
     const callNum = callingCard.querySelector(".call_number").innerText;
 
-    alert(`Calling to ${callingText} through ${callNum}`);
+    alert(`📞 Calling to ${callingText} through ${callNum}`);
 
     //adding to call history part
     const callHistoryList = document.getElementById("history_list");
@@ -69,8 +69,8 @@ callBtn.addEventListener("click", function (e) {
 
     const leftDiv = document.createElement("div");
     leftDiv.innerHTML = `
-                    <h3 class=" font-medium md:font-semibold text-[18px] md:text-[22px] text-[#111111] "> ${callingText} </h3>
-                    <p class=" text-lg text-[#5C5C5C]  "> ${callNum} </p>
+                    <h3 class=" font-medium md:font-semibold text-sm md:text-xl  text-[#111111] "> ${callingText} </h3>
+                    <p class=" text-base text-[#5C5C5C]  "> ${callNum} </p>
                    `;
 
     const rightDiv = document.createElement("div");
