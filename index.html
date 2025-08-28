@@ -23,36 +23,36 @@
     />
   </head>
   <body>
-    <header class="">
-      <nav class="nav_bar flex justify-between items-center">
+    <header>
+      <nav class="nav_bar flex justify-between items-center px-3 sm:px-4 lg:px-12 py-4 gap-[38px]">
 
         <!-- //nav left part -->
         <div class="nav_left flex items-center gap-2">
-          <img src="./assets/logo.png" class="w-10" alt="" />
+          <img src="./assets/logo.png" class=" w-[30px] md:w-10" alt="" />
           <div>
-            <h3 class="text-[#006747] font-bold">
+            <h2 class="text-[#006747] font-bold text-[12px] md:text-base">
               Emergency <br />
               Service
-            </h3>
+            </h2>
           </div>
         </div>
 
         <!-- //nav right part -->
-        <div class="nav_right flex gap-2 md:gap-10">
+        <div class="nav_right flex gap-1 md:gap-3 lg:gap-6">
           <button
-            class="flex items-center gap-2 bg-[#41ff6b1a] rounded-3xl p-2 w-10 md:w-28 justify-center font-bold"
+            class="flex items-center gap-2 bg-[#41ff6b1a] rounded-3xl px-3 py-2   font-bold"
           >
           <!-- total heart count  -->
             <span id="total_heart">0</span>
-            <img src="./assets/heart.png" class="w-3" alt="" />
+            <img src="./assets/heart.png" class="w-5" alt="" />
           </button>
           <button
-            class="flex items-center gap-2 bg-[#41ff6b1a] rounded-3xl p-2 w-10 md:w-28 justify-center font-bold"
+            class="flex items-center gap-2 bg-[#41ff6b1a] rounded-3xl p-2 w-16 md:w-18 justify-center font-bold"
           >
 
           <!-- available coin  -->
             <span id="available_coins">100</span>
-            <img src="./assets/coin.png" class="w-3" alt="" />
+            <img src="./assets/coin.png" class="w-5" alt="" />
           </button>
           <button
             class="border-2 rounded-3xl w-16 md:w-28 bg-[#00A63E] text-[#ffffff] text-sm"
@@ -66,19 +66,19 @@
 
       <!-- //banner section -->
       <section
-        class="banner_section bg-gradient-to-r from-[#013123] via-[#006747] to-[#013223] text-[#ffffff]"
+        class="banner_section bg-gradient-to-r from-[#013123] via-[#006747] to-[#013223] text-[#ffffff] p-2"
       >
-        <div class="text-center flex-col items-center justify-center py-5">
+        <div class="text-center flex-col items-center justify-center py-3">
           <div class="flex items-center justify-center">
             <img src="./assets/logo-dark.png" class="w-[92px]" alt="" />
           </div>
 
           <div>
-            <h3 class="text-[40px] font-bold">Emergency Service Directory</h3>
-            <h3 class="text-[20px]">
+            <h3 class="text-xl sm:text-3xl md:text-4xl font-bold mt-2">Emergency Service Directory</h3>
+            <p class="text-sm sm:text-base mt-3">
               Government Emergency Services at Your Fingertip – A Project by
               Government of the People’s Republic of Bangladesh
-            </h3>
+            </p>
           </div>
         </div>
       </section>
@@ -86,7 +86,7 @@
 
     <main>
       <section
-        class="p-12 flex flex-col lg:flex lg:flex-row gap-8 bg-[#F5FFF6]"
+        class="p-4 md:p-8 lg:p-12 flex flex-col lg:flex lg:flex-row gap-8 bg-[#F5FFF6]"
       >
 
       <!-- //card section -->
@@ -100,12 +100,14 @@
           <div
             class="card_container shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-5 rounded-[12px] bg-white"
           >
-            <div class="flex justify-between items-center my-3">
+            <div class="flex flex-col justify-between">
+
+              <div class="flex justify-between items-center my-3">
               <img src="./assets/emergency.png" class="w-[60px] bg-[#FFE3E2]
-              rounded p-[14px] alt="">
+              rounded p-[14px]" alt="">
 
               <!-- heart icon  -->
-              <i  class="fa-solid fa-heart text-[27px]"></i>
+              <i  class="far fa-heart text-[27px] cursor-pointer  "></i>
             </div>
             <div>
                   <!-- //text title h3 -->
@@ -127,16 +129,19 @@
             <div class="flex gap-3 rounded-xl">
                   <!-- //copy btn  -->
               <button
-                class="copy_btn border border-[#5c5c5c] w-1/2 rounded-[8px] p-2 text-[#5c5c5c]"
+                class="copy_btn cursor-pointer hover:bg-black hover:text-white border-[1px] border-[rgba(212,214,213,1)] w-1/2 rounded-[8px] p-2 text-[#5c5c5c]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
                   <!-- //call btn  -->
               <button
-                class="call_btn border-2 w-1/2 rounded-[8px] p-2 text-[#ffffff] bg-[#00a63e]"
+                class="call_btn cursor-pointer hover:bg-gray-300 border-2 w-1/2 rounded-[8px] p-2 text-[#ffffff] bg-[#00a63e]"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
+            </div>
+
+
             </div>
           </div>
 
@@ -144,12 +149,12 @@
 
           <!-- card2 -->
           <div
-            class="card_container shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-5 rounded-[12px] bg-white flex-col justify-end"
+            class="card_container shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-5 rounded-[12px] bg-white flex flex-col justify-between"
           >
             <div class="flex justify-between items-center my-3">
               <img src="./assets/police.png" class="w-[60px] bg-[#FFE3E2]
-              rounded p-[14px] alt="">
-              <i class="fa-solid fa-heart text-[27px]"></i>
+              rounded p-[14px]" alt="">
+              <i class="far fa-heart text-[27px] cursor-pointer"></i>
             </div>
             <div>
 
@@ -172,14 +177,14 @@
             <div class="flex gap-3 rounded-xl">
               <!-- //copy btn  -->
               <button
-                class="copy_btn border border-[#5c5c5c] w-1/2 rounded-[8px] p-2 text-[#5c5c5c]"
+                class="copy_btn cursor-pointer hover:bg-black hover:text-white border-[1px] border-[rgba(212,214,213,1)] w-1/2 rounded-[8px] p-2 text-[#5c5c5c]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
 
               <!-- //call_btn -->
               <button
-                class="call_btn border-2 w-1/2 rounded-[8px] p-2 text-[#ffffff] bg-[#00a63e]"
+                class="call_btn cursor-pointer hover:bg-gray-300 border-2 w-1/2 rounded-[8px] p-2 text-[#ffffff] bg-[#00a63e]"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -188,12 +193,12 @@
 
           <!-- card3 -->
           <div
-            class="card_container shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-5 rounded-[12px] bg-white"
+            class="card_container shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-5 rounded-[12px] bg-white flex flex-col justify-between"
           >
             <div class="flex justify-between items-center my-3">
               <img src="./assets/fire-service.png" class="w-[60px] bg-[#FFE3E2]
-              rounded p-[14px] alt="">
-              <i  class="fa-solid fa-heart text-[27px]"></i>
+              rounded p-[14px]" alt="">
+              <i  class="far fa-heart text-[27px] cursor-pointer"></i>
             </div>
             <div>
 
@@ -217,14 +222,14 @@
 
               <!-- //copy btn  -->
               <button
-                class="copy_btn border border-[#5c5c5c] w-1/2 rounded-[8px] p-2 text-[#5c5c5c]"
+                class="copy_btn cursor-pointer hover:bg-black hover:text-white border-[1px] border-[rgba(212,214,213,1)] w-1/2 rounded-[8px] p-2 text-[#5c5c5c]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
 
               <!-- //call btn  -->
               <button
-                class="call_btn border-2 w-1/2 rounded-[8px] p-2 text-[#ffffff] bg-[#00a63e]"
+                class="call_btn cursor-pointer hover:bg-gray-300 border-2 w-1/2 rounded-[8px] p-2 text-[#ffffff] bg-[#00a63e]"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -233,12 +238,12 @@
 
           <!-- card4 -->
           <div
-            class="card_container shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-5 rounded-[12px] bg-white"
+            class="card_container shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-5 rounded-[12px] bg-white flex flex-col justify-between"
           >
             <div class="flex justify-between items-center my-3">
               <img src="./assets/ambulance.png" class="w-[60px] bg-[#FFE3E2]
-              rounded p-[14px] alt="">
-              <i  class="fa-solid fa-heart text-[27px]"></i>
+              rounded p-[14px]" alt="">
+              <i  class="far fa-heart text-[27px] cursor-pointer"></i>
             </div>
             <div>
 
@@ -262,14 +267,14 @@
 
               <!-- //copy btn -->
               <button
-                class="copy_btn border border-[#5c5c5c] w-1/2 rounded-[8px] p-2 text-[#5c5c5c]"
+                class="copy_btn cursor-pointer hover:bg-black hover:text-white border-[1px] border-[rgba(212,214,213,1)] w-1/2 rounded-[8px] p-2 text-[#5c5c5c]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
 
               <!-- //call btn  -->
               <button
-                class="call_btn border-2 w-1/2 rounded-[8px] p-2 text-[#ffffff] bg-[#00a63e]"
+                class="call_btn cursor-pointer hover:bg-gray-300 border-2 w-1/2 rounded-[8px] p-2 text-[#ffffff] bg-[#00a63e]"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -278,12 +283,12 @@
 
           <!-- card5 -->
           <div
-            class="card_container shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-5 rounded-[12px] bg-white"
+            class="card_container shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-5 rounded-[12px] bg-white flex flex-col justify-between"
           >
             <div class="flex justify-between items-center my-3">
               <img src="./assets/emergency.png" class="w-[60px] bg-[#FFE3E2]
-              rounded p-[14px] alt="">
-              <i  class="fa-solid fa-heart text-[27px]"></i>
+              rounded p-[14px]" alt="">
+              <i  class="far fa-heart text-[27px] cursor-pointer"></i>
             </div>
             <div>
 
@@ -307,14 +312,14 @@
 
               <!-- //copy btn -->
               <button
-                class="copy_btn border border-[#5c5c5c] w-1/2 rounded-[8px] p-2 text-[#5c5c5c]"
+                class="copy_btn cursor-pointer hover:bg-black hover:text-white border-[1px] border-[rgba(212,214,213,1)] w-1/2 rounded-[8px] p-2 text-[#5c5c5c]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
 
               <!-- //call btn  -->
               <button
-                class="call_btn border-2 w-1/2 rounded-[8px] p-2 text-[#ffffff] bg-[#00a63e]"
+                class="call_btn cursor-pointer hover:bg-gray-300 border-2 w-1/2 rounded-[8px] p-2 text-[#ffffff] bg-[#00a63e]"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -323,12 +328,12 @@
 
           <!-- card6 -->
           <div
-            class="card_container shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-5 rounded-[12px] bg-white"
+            class="card_container shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-5 rounded-[12px] bg-white flex flex-col justify-between"
           >
             <div class="flex justify-between items-center my-3">
               <img src="./assets/emergency.png" class="w-[60px] bg-[#FFE3E2]
-              rounded p-[14px] alt="">
-              <i  class="fa-solid fa-heart text-[27px]"></i>
+              rounded p-[14px]" alt="">
+              <i  class="far fa-heart text-[27px] cursor-pointer"></i>
             </div>
             <div>
 
@@ -352,14 +357,14 @@
 
               <!-- //copy btn -->
               <button
-                class="copy_btn border border-[#5c5c5c] w-1/2 rounded-[8px] p-2 text-[#5c5c5c]"
+                class="copy_btn cursor-pointer hover:bg-black hover:text-white border-[1px] border-[rgba(212,214,213,1)] w-1/2 rounded-[8px] p-2 text-[#5c5c5c]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
 
               <!-- //call btn  -->
               <button
-                class="call_btn border-2 w-1/2 rounded-[8px] p-2 text-[#ffffff] bg-[#00a63e]"
+                class="call_btn cursor-pointer hover:bg-gray-300 border-2 w-1/2 rounded-[8px] p-2 text-[#ffffff] bg-[#00a63e]"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -368,12 +373,12 @@
 
           <!-- card7 -->
           <div
-            class="card_container shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-5 rounded-[12px] bg-white"
+            class="card_container shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-5 rounded-[12px] bg-white flex flex-col justify-between"
           >
             <div class="flex justify-between items-center my-3">
               <img src="./assets/emergency.png" class="w-[60px] bg-[#FFE3E2]
-              rounded p-[14px] alt="">
-              <i class="fa-solid fa-heart text-[27px]"></i>
+              rounded p-[14px]" alt="">
+              <i class="far fa-heart text-[27px] cursor-pointer"></i>
             </div>
             <div>
 
@@ -397,14 +402,14 @@
 
               <!-- //call btn  -->
               <button
-                class="copy_btn border border-[#5c5c5c] w-1/2 rounded-[8px] p-2 text-[#5c5c5c]"
+                class="copy_btn cursor-pointer hover:bg-black hover:text-white border-[1px] border-[rgba(212,214,213,1)] w-1/2 rounded-[8px] p-2 text-[#5c5c5c]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
 
               <!-- //call btn  -->
               <button
-                class="call_number border-2 w-1/2 rounded-[8px] p-2 text-[#ffffff] bg-[#00a63e]"
+                class="call_btn cursor-pointer hover:bg-gray-300 border-2 w-1/2 rounded-[8px] p-2 text-[#ffffff] bg-[#00a63e]"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -413,12 +418,12 @@
 
           <!-- card8 -->
           <div
-            class="card_container shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-5 rounded-[12px] bg-white"
+            class="card_container shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-5 rounded-[12px] bg-white flex flex-col justify-between"
           >
             <div class="flex justify-between items-center my-3">
-              <img src="./assets/emergency.png" class="w-[60px] bg-[#FFE3E2]
-              rounded p-[14px] alt="">
-              <i  class="fa-solid fa-heart text-[27px]"></i>
+              <img src="./assets/brac.png" class="w-[60px] bg-[#FFE3E2]
+              rounded p-[14px]" alt="">
+              <i  class="far fa-heart text-[27px] cursor-pointer"></i>
             </div>
             <div>
 
@@ -442,14 +447,14 @@
 
               <!-- //copy btn -->
               <button
-                class="copy_btn border border-[#5c5c5c] w-1/2 rounded-[8px] p-2 text-[#5c5c5c]"
+                class="copy_btn cursor-pointer hover:bg-black hover:text-white border-[1px] border-[rgba(212,214,213,1)] w-1/2 rounded-[8px] p-2 text-[#5c5c5c]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
 
               <!-- //call btn  -->
               <button
-                class="call_btn border-2 w-1/2 rounded-[8px] p-2 text-[#ffffff] bg-[#00a63e]"
+                class="call_btn cursor-pointer hover:bg-gray-300 border-2 w-1/2 rounded-[8px] p-2 text-[#ffffff] bg-[#00a63e]"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -458,12 +463,12 @@
 
           <!-- card9 -->
           <div
-            class="card_container shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-5 rounded-[12px] bg-white"
+            class="card_container shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-5 rounded-[12px] bg-white flex flex-col justify-between"
           >
             <div class="flex justify-between items-center my-3">
-              <img src="./assets/emergency.png" class="w-[60px] bg-[#FFE3E2]
-              rounded p-[14px] alt="">
-              <i class="fa-solid fa-heart text-[27px]"></i>
+              <img src="./assets/Bangladesh-Railway.png" class="w-[60px] bg-[#FFE3E2]
+              rounded p-[14px]" alt="">
+              <i class="far fa-heart text-[27px] cursor-pointer"></i>
             </div>
             <div>
 
@@ -487,14 +492,14 @@
 
               <!-- //copy btn -->
               <button
-                class="copy_btn border border-[#5c5c5c] w-1/2 rounded-[8px] p-2 text-[#5c5c5c]"
+                class="copy_btn cursor-pointer hover:bg-black hover:text-white border-[1px] border-[rgba(212,214,213,1)] w-1/2 rounded-[8px] p-2 text-[#5c5c5c]"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
 
               <!-- //call btn  -->
               <button
-                class="call_btn border-2 w-1/2 rounded-[8px] p-2 text-[#ffffff] bg-[#00a63e]"
+                class="call_btn cursor-pointer hover:bg-gray-300 border-2 w-1/2 rounded-[8px] p-2 text-[#ffffff] bg-[#00a63e]"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -504,22 +509,23 @@
 
         <!-- call history section  -->
         <aside
-          class="call_history_section lg:w-[30%] p-6 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white rounded-[12px]"
+          class="call_history_section lg:w-[29%] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white rounded-[12px] w-full p-4 md:p-6 mt-6 lg:mt-0"
         >
-          <div class="part1 flex justify-between items-center border-2">
-            <div class="font-semibold text-[20px]">
-              <i class="fa-solid fa-clock"></i> Call History
+          <div class="part1 flex justify-between items-center mb-6">
+            <div class="font-medium text-2xl">
+              <i class="far fa-clock text-black bg-white"></i> Call History
             </div>
 
             <!-- clear btn  -->
-            <button id="clear_history" class="bg-[#00A63E] rounded-xl px-5 py-2 text-white">
+            <button id="clear_history" class="bg-[#00A63E] hover:bg-neutral-300 rounded-3xl w-28 px-8 py-3 text-lg font-semibold text-white btn">
               Clear
             </button>
           </div>
-          <div id="histor_list" class="part2">
-            
+
+          <!-- //empty div  -->
+          <div id="history_list" class="part2"> 
           </div>
-          <div></div>
+          
         </aside>
       </section>
     </main>
